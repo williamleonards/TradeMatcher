@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/williamleonards/Documents/TradeMatcher/main.cpp
+iostream
+-
+unordered_map
+-
+test.h
+/Users/williamleonards/Documents/TradeMatcher/test.h
+
+/Users/williamleonards/Documents/TradeMatcher/test.h
+

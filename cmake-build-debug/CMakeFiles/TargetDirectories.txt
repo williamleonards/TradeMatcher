@@ -1,0 +1,3 @@
+/Users/williamleonards/Documents/TradeMatcher/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/williamleonards/Documents/TradeMatcher/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/williamleonards/Documents/TradeMatcher/cmake-build-debug/CMakeFiles/TradeMatcher.dir
