@@ -128,7 +128,6 @@ vector<Trade*> TradeEngine::placeSellOrder(int issuerID, int price, int amt) {
                 amtLeft -= remaining;
                 remaining = 0;
             } else { // current order finished
-                // cout << "remaining = " << remaining << " currAmt = " << currAmt << " currprice = " << currPrice << endl;
                 Trade *trade = new Trade(currAmt, currPrice, buyerID, issuerID);
                 ans.push_back(trade);
                 // update buyer's and seller's finished orders
@@ -187,10 +186,8 @@ vector<pair<int, int>> TradeEngine::getPendingBuys() {
         int vol = itr->second->first;
         if (vol != 0) {
             v.push_back(pair<int, int>(price, vol));
-//            cout << price << " " << vol << endl;
         }
     }
-//    cout << "__________________" << endl;
     return v;
 }
 vector<pair<int, int>> TradeEngine::getPendingSells() {
@@ -200,10 +197,8 @@ vector<pair<int, int>> TradeEngine::getPendingSells() {
         int vol = itr->second->first;
         if (vol != 0) {
             v.push_back(pair<int, int>(price, vol));
-//            cout << price << " " << vol << endl;
         }
     }
-//    cout << "__________________" << endl;
     return v;
 }
 vector<Order*> TradeEngine::getPendingOrders(int userID) {
