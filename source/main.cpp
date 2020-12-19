@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unordered_map>
 
-#include "test.h"
+#include "../test/test.h"
 
 using namespace std;
 

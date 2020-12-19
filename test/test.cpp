@@ -3,7 +3,7 @@
 //
 
 #include "test.h"
-#include "TradeEngine.h"
+#include "../source/TradeEngine.h"
 
 static void printOrderVector(vector<Order*> *v) {
     for (Order* ord : *v) {
