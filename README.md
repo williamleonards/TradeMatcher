@@ -18,9 +18,13 @@ Initialisation of the trade engine: O(1).
 
 Creating a user: O(1).
 
-Placing a buy order: O(log m), where m is the size (i.e., the number of distinct price points) of the buy tree.
+Placing a buy order: 
+Worst-case complexity: O(n + log m), where n is the number of orders in the sell tree (not its size!) and m is the size (i.e., the number of distinct price points) of the buy tree.
+Amortised complexity: O(log m), where m is the size (i.e., the number of distinct price points) of the buy tree.
 
-Placing a sell order: O(log m), where m is the size (i.e., the number of distinct price points) of the sell tree.
+Placing a sell order: 
+Worst-case complexity: O(n + log m), where n is the number of orders in the buy tree (not its size!) and m is the size (i.e., the number of distinct price points) of the sell tree.
+Amortised complexity: O(log m), where m is the size (i.e., the number of distinct price points) of the sell tree.
 
 Deleting an order: O(1).
 
