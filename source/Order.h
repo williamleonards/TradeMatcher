@@ -24,9 +24,16 @@ public:
     int getAmt();
     void setAmt(int amt_);
     int getPrice();
+
+    // Checks if the order is stale (i.e., has been deleted by the deleteOrder command).
     bool checkValid();
+
+    // Set the order to be stale.
     void setInvalid();
+
+    // Logical equals: return true if other != NULL and all the corresponding fields are equal
     bool equals(Order *other);
+
     void print();
 private:
     bool type; // true = buy, false = sell

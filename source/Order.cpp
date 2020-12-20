@@ -40,6 +40,7 @@ void Order::setInvalid() {
     valid = false;
 }
 bool Order::equals(Order *other) {
+    if (other == nullptr) return false;
     return this->type == other->type && this->id == other->id && this->amt == other->amt && this->price == other->price &&
         this->issuerID == other->issuerID && this->id == other->id;
 }

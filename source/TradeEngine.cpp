@@ -177,7 +177,7 @@ void TradeEngine::deleteOrder(int issuerID, int orderID) { //lazy deletion
     }
     p->first -= order->getAmt();
     order->setInvalid();
-    userOrders->erase(orderID); // CHECK THE SYNTAX!!!
+    userOrders->erase(orderID);
 }
 vector<pair<int, int>> TradeEngine::getPendingBuys() {
     vector<pair<int, int>> v;

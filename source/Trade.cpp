@@ -23,5 +23,7 @@ int Trade::getSellerID() {
     return sellerID;
 }
 bool Trade::equals(Trade *other) {
-    return this->amt == other->amt && this->price == other->price && this->buyerID == other->buyerID && this->sellerID == other->sellerID;
+    if (other == nullptr) return false;
+    return this->amt == other->amt && this->price == other->price && this->buyerID == other->buyerID
+    && this->sellerID == other->sellerID;
 }
