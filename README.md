@@ -37,3 +37,29 @@ Getting a user’s pending orders (buy/sell): O(n), where n is the number of suc
 Getting a user’s buy history: O(1). It returns a pointer to the vector of such trades.
 
 Getting a user’s sell history: O(1). It returns a pointer to the vector of such trades.
+
+## Compiling and Executing
+Run CMake build:
+```bash
+cmake build .
+```
+Run Makefile:
+```bash
+make
+```
+Run the executable:
+```bash
+./TradeMatcher
+```
+All testcases will be run, producing the following output:
+```bash
+testInit passed
+testInitUser passed
+testSingleUser passed
+testSingleDelete passed
+testDeleteAfterTrade passed
+testBuyOut passed
+testSellOut passed
+testAll passed
+stressTest passed
+```
