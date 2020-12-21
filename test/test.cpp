@@ -5,11 +5,6 @@
 #include "test.h"
 #include "../source/TradeEngine.h"
 
-static void printOrderVector(vector<Order*> *v) {
-    for (Order* ord : *v) {
-        ord->print();
-    }
-}
 void test::runAllTests() {
     test::testInit();
     test::testInitUser();
@@ -35,8 +30,8 @@ void test::testInitUser() {
     int amyID = t->createUser("Amy");
     vector<Trade*> empty;
     vector<Order*> empty2;
-    assert(t->getBuyTrades(amyID) == empty);
-    assert(t->getSellTrades(amyID) == empty);
+    assert(*(t->getBuyTrades(amyID)) == empty);
+    assert(*(t->getSellTrades(amyID)) == empty);
     assert(t->getPendingOrders(amyID) == empty2);
     cout << "testInitUser passed" << endl;
     delete t;

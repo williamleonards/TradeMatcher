@@ -36,6 +36,7 @@ public:
      * at a price specified on each of the buy order.*/
     vector<Trade*> placeSellOrder(int issuerID, int price, int amt);
 
+    // Delete an order specified by `issuerID` and `orderID`. Does nothing if parameters are invalid.
     void deleteOrder(int issuerID, int orderID);
 
     /* Get the volume of orders on the buy tree at all price points (in descending order).
@@ -50,19 +51,36 @@ public:
     vector<Order*> getPendingOrders(int userID);
 
     // Gets the buy history of the user with id `userID`. Returns a vector of trades involving the user as the buyer.
-    vector<Trade*> getBuyTrades(int userID);
+    vector<Trade*>* getBuyTrades(int userID);
 
     // Gets the sell history of the user with id `userID`. Returns a vector of trades involving the user as the seller.
-    vector<Trade*> getSellTrades(int userID);
+    vector<Trade*>* getSellTrades(int userID);
 private:
     unordered_map<int, User*> users;
     int nextUserID;
 
     // Ordered map from a price point to a pair of (volume of sell orders, list of sell orders) at that price
-    map<int, pair<int, list<Order*>*>*> sellHeap;
+    map<int, pair<int, list<Order*>*>*> sellTree;
 
     // Ordered map from a price point to a pair of (volume of buy orders, list of buy orders) at that price
-    map<int, pair<int, list<Order*>*>*> buyHeap;
+    map<int, pair<int, list<Order*>*>*> buyTree = map<int, pair<int, list<Order*>*>*>();
+
+    // helper methods
+
+    // Check if the first order in `lst` is stale (i.e., deleted). If so, remove it from `lst`.
+    bool firstOrderIsStale(list<Order*> *lst);
+
+    // Put the remaining order with the specified parameters to the corresponding tree.
+    void putRemainingOrderOnTree(bool buyOrSell, User *user, int price, int remaining);
+
+    // Generate trades that occur when an incoming trade is placed and update its remaining quantity accordingly.
+    vector<Trade*> generateTrades(bool buyOrSell, int &price, int &issuerID, int &remaining);
+
+    /* Consume pending orders at price point `currPrice` and put it into `ans`. Updates the volume at this price point
+     * (`amtLeft`) and the remaining quantity in the incoming order (`remaining`) accordingly.
+     * Also updates buyers' and sellers' accounts whenever a trade occurs. */
+    void consumePendingOrders(bool buyOrSell, int &issuerID, int &remaining, int &amtLeft, int &currPrice,
+            list<Order*> *orders, vector<Trade*> &ans);
 };
 
 
