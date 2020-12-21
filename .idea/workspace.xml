@@ -13,32 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b35a7e8-5265-4857-a3b3-bdbaa311ef10" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/3.12.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TradeMatcher.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +54,7 @@
         <counts>
           <entry key="Makefile" value="4" />
           <entry key="cpp" value="7185" />
-          <entry key="gitignore" value="97" />
+          <entry key="gitignore" value="108" />
           <entry key="h" value="3425" />
           <entry key="txt" value="13" />
         </counts>
@@ -90,7 +64,7 @@
           <entry key="CMakeLists.txt" value="13" />
           <entry key="Doxygen file" value="1" />
           <entry key="ObjectiveC" value="10609" />
-          <entry key="PLAIN_TEXT" value="97" />
+          <entry key="PLAIN_TEXT" value="108" />
           <entry key="UNKNOWN" value="4" />
         </counts>
       </usages-collector>
@@ -182,8 +156,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -343,7 +317,7 @@
       <workItem from="1594404930899" duration="32163000" />
       <workItem from="1603684831217" duration="220000" />
       <workItem from="1608352153888" duration="7010000" />
-      <workItem from="1608440944111" duration="24020000" />
+      <workItem from="1608440944111" duration="24106000" />
     </task>
     <servers />
   </component>
@@ -380,7 +354,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69312000" />
+    <option name="totallyTimeSpent" value="69398000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="240">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
