@@ -1,3 +1,6 @@
+# Executable output
+TradeMatcher
+
 ### CMake ###
 CMakeLists.txt.user
 CMakeCache.txt
