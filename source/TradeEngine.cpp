@@ -19,7 +19,6 @@ TradeEngine::~TradeEngine() {
         delete p.second;
     }
 }
-
 int TradeEngine::createUser(string name) {
     User *user = new User(nextUserID, name);
     users[nextUserID] = user;
@@ -189,6 +188,7 @@ void TradeEngine::consumePendingOrders(bool buyOrSell, int &issuerID, int &remai
         Order *first = orders->front();
         int currAmt = first->getAmt();
         int counterpartyID = first->getIssuerID();
+        // figure out who's the buyer and the seller
         int buyerID = buyOrSell ? issuerID : counterpartyID;
         int sellerID = buyOrSell ? counterpartyID : issuerID;
         User *buyer = users[buyerID];

@@ -14,8 +14,8 @@ void test::runAllTests() {
     test::testBuyOut();
     test::testSellOut();
     test::testAll();
+    test::stressTest();
 }
-
 void test::testInit() {
     TradeEngine *t = new TradeEngine();
     vector<pair<int, int>> empty;
@@ -24,7 +24,6 @@ void test::testInit() {
     cout << "testInit passed" << endl;
     delete t;
 }
-
 void test::testInitUser() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -36,7 +35,6 @@ void test::testInitUser() {
     cout << "testInitUser passed" << endl;
     delete t;
 }
-
 void test::testSingleUser() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -61,7 +59,6 @@ void test::testSingleUser() {
     cout << "testSingleUser passed" << endl;
     delete t;
 }
-
 void test::testSingleDelete() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -94,7 +91,6 @@ void test::testSingleDelete() {
     }
     delete t;
 }
-
 void test::testDeleteAfterTrade() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -130,7 +126,6 @@ void test::testDeleteAfterTrade() {
 
     delete t;
 }
-
 void test::testBuyOut() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -160,7 +155,6 @@ void test::testBuyOut() {
 
     delete t;
 }
-
 void test::testSellOut() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -190,7 +184,6 @@ void test::testSellOut() {
 
     delete t;
 }
-
 void test::testAll() {
     TradeEngine *t = new TradeEngine();
     int amyID = t->createUser("Amy");
@@ -225,6 +218,34 @@ void test::testAll() {
     delete tr;
 
     cout << "testAll passed" << endl;
+
+    delete t;
+}
+void test::stressTest() {
+    TradeEngine *t = new TradeEngine();
+
+    vector<Trade*> empty;
+    vector<Trade*> expected;
+
+    int bigBuyerID = t->createUser("bigBuyer");
+
+    for (int i = 1; i <= 100000; i++) {
+        int userID = t->createUser(to_string(i));
+        assert(t->placeSellOrder(userID, i, 1) == empty);
+    }
+
+    for (int i = 1; i <= 100000; i++) {
+        expected.push_back(new Trade(1, i, bigBuyerID, i));
+    }
+
+    vector<Trade*> trades = t->placeBuyOrder(bigBuyerID, 100000, 100000);
+
+    for (int i = 0; i < expected.size(); i++) {
+        assert(trades[i]->equals(expected[i]));
+        delete expected[i];
+    }
+
+    cout << "stressTest passed" << endl;
 
     delete t;
 }

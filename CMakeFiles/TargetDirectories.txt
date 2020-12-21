@@ -1,0 +1,3 @@
+/Users/williamleonards/Documents/TradeMatcher/CMakeFiles/rebuild_cache.dir
+/Users/williamleonards/Documents/TradeMatcher/CMakeFiles/edit_cache.dir
+/Users/williamleonards/Documents/TradeMatcher/CMakeFiles/TradeMatcher.dir

@@ -16,6 +16,7 @@ public:
     static void testBuyOut();
     static void testSellOut();
     static void testAll();
+    static void stressTest();
 };
 
 
