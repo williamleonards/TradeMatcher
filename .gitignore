@@ -58,3 +58,4 @@ cmake-build-debug/**
 
 #Others
 .DS_Store
+*.cbp
