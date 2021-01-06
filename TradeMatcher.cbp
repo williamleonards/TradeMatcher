@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TradeMatcher"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/williamleonards/Documents/TradeMatcher"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/williamleonards/Documents/TradeMatcher"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/williamleonards/Documents/TradeMatcher"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TradeMatcher">
+				<Option output="/Users/williamleonards/Documents/TradeMatcher/TradeMatcher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/williamleonards/Documents/TradeMatcher"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 TradeMatcher"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TradeMatcher/fast">
+				<Option output="/Users/williamleonards/Documents/TradeMatcher/TradeMatcher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/williamleonards/Documents/TradeMatcher"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 TradeMatcher/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/williamleonards/Documents/TradeMatcher/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/Order.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/Order.h">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/Trade.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/Trade.h">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/TradeEngine.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/TradeEngine.h">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/User.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/User.h">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/source/main.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/test/test.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/test/test.h">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/test/testConcurrency.cpp">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/test/testConcurrency.h">
+			<Option target="TradeMatcher"/>
+		</Unit>
+		<Unit filename="/Users/williamleonards/Documents/TradeMatcher/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
